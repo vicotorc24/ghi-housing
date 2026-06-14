@@ -1,0 +1,28 @@
+---
+const pathname = Astro.url.pathname;
+const isHome = pathname === '/' || pathname === '/index.html' || pathname === '';
+const isInmobiliaria = pathname.includes('/inmobiliaria');
+---
+
+<header id="header" class="header d-flex align-items-center fixed-top">
+  <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+    <a href="/" class="logo d-flex align-items-center">
+      <img src="/assets/img/logo.png" alt="GHI Housing" class="img-fluid" style="height: 50px;">
+    </a>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href={isHome ? "#hero" : "/"} class={isHome ? "active" : ""}>Inicio</a></li>
+        <li><a href={isHome ? "#about" : "/#about"}>Nosotros</a></li>
+        <li><a href={isHome ? "#services" : "/#services"}>Administración</a></li>
+        <li><a class={`nav-link scrollto featured-link ${isInmobiliaria ? "active" : ""}`} href="/inmobiliaria" style="color: #ff9900;">Inmobiliaria</a></li>
+        <li><a href={isHome ? "#team" : "/#team"}>Equipo</a></li>
+        <li><a href={isHome ? "#lumina" : "/#lumina"}>Lúmina</a></li>
+        <li><a href={isHome ? "#contact" : "/#contact"}>Contacto</a></li>
+      </ul>
+      <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+    </nav>
+
+  </div>
+</header>

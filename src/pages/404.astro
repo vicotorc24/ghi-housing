@@ -1,0 +1,99 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout 
+  title="Página No Encontrada | GHI Housing"
+  description="Lo sentimos, la página que buscas no existe. Explora nuestras propiedades o servicios de administración de condominios."
+>
+  <main class="main" style="margin-top: 80px;">
+    <section id="error-404" class="error-404 section py-5">
+      <div class="container py-5">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            
+            <div class="error-number fw-bold mb-3" style="font-size: 6rem; color: var(--color-primary);">
+              404
+            </div>
+
+            <h1 class="error-title fw-bold mb-4" style="color: #344761; font-size: 2.25rem;">
+              Página no encontrada
+            </h1>
+
+            <p class="error-description text-muted lead mb-5">
+              Lo sentimos, la página que estás buscando podría haber sido eliminada, haber cambiado de nombre o no estar disponible temporalmente.
+            </p>
+
+            <div class="error-actions mb-5">
+              <a href="/" class="btn btn-primary btn-lg px-4 me-3">
+                <i class="bi bi-house me-2"></i>
+                Ir al Inicio
+              </a>
+              <a href="/inmobiliaria" class="btn btn-outline-secondary btn-lg px-4">
+                <i class="bi bi-search me-2"></i>
+                Ver Propiedades
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="row justify-content-center mt-5">
+          <div class="col-lg-10">
+            <div class="helpful-links p-4 bg-light rounded text-center border">
+              <h3 class="h5 fw-bold mb-4" style="color: #344761;">Enlaces que podrían interesarte:</h3>
+              <div class="row g-3 justify-content-center">
+                <div class="col-md-3 col-sm-6">
+                  <a href="/#about" class="text-decoration-none text-dark d-block p-2 bg-white rounded shadow-sm hover-elevate">
+                    <i class="bi bi-info-circle text-primary me-2"></i>Nosotros
+                  </a>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                  <a href="/#services" class="text-decoration-none text-dark d-block p-2 bg-white rounded shadow-sm hover-elevate">
+                    <i class="bi bi-grid-3x3-gap text-primary me-2"></i>Administración
+                  </a>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                  <a href="/inmobiliaria" class="text-decoration-none text-dark d-block p-2 bg-white rounded shadow-sm hover-elevate">
+                    <i class="bi bi-building text-primary me-2"></i>Inmobiliaria
+                  </a>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                  <a href="/#contact" class="text-decoration-none text-dark d-block p-2 bg-white rounded shadow-sm hover-elevate">
+                    <i class="bi bi-telephone text-primary me-2"></i>Contacto
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+</Layout>
+
+<style is:global>
+  #header.fixed-top {
+    background-color: #344761;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  @media (min-width: 1200px) {
+    #header.fixed-top .navmenu a {
+      color: #fff !important;
+    }
+    #header.fixed-top .logo .sitename { 
+      color: #fff !important; 
+    }
+  }
+</style>
+
+<style>
+  .hover-elevate {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .hover-elevate:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08) !important;
+  }
+</style>

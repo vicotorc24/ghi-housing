@@ -1,0 +1,366 @@
+---
+import Layout from '../layouts/Layout.astro';
+import properties from '../data/properties.json';
+---
+
+<Layout 
+  title="GHI Housing - Gestión Inmobiliaria Premium en Perú"
+  description="Servicio inmobiliario premium en Perú para venta, alquiler y administración de propiedades. Te garantizamos la máxima rentabilidad y seguridad legal. Publica tu propiedad con nosotros."
+  keywords="gestión inmobiliaria Perú, venta de propiedades, alquiler de inmuebles, captación de propiedades, administración de alquileres, inmobiliaria Trujillo, GHI Housing inmobiliaria"
+  whatsappText="Hola GHI Housing, estoy interesado en información sobre la gestión inmobiliaria."
+  ogImage="/assets/img/hero-inmobiliaria.webp"
+>
+  <section class="inmo-hero d-flex align-items-center">
+    <div class="container text-center">
+      <h1>Encuentra tu Inversión Perfecta en Perú</h1>
+      <p class="mt-3">
+        Somos tu socio estratégico para la compra, venta y administración de inmuebles. 
+        Garantizamos la máxima rentabilidad, transparencia y seguridad legal en cada operación.
+      </p>
+      <div class="mt-4">
+        <a href="#captacion-form" class="btn btn-primary btn-lg">
+          Vender o Alquilar mi Propiedad <i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="servicios-inmobiliarios" class="services section">
+    <div class="container section-title">
+      <h2 style="font-size: 2.5rem; color: var(--color-primary);">Nuestros Servicios Exclusivos</h2>
+      <p class="lead" style="color: #6c757d;">
+        Te ofrecemos una gestión especializada y de alta calidad para maximizar el valor de tu propiedad.
+      </p>
+    </div>
+    
+    <div class="container">
+      <div class="row gy-4 justify-content-center">
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card shadow-sm border-0">
+            <div class="service-icon" style="background: #eef7ff;">
+              <i class="bi bi-house-door-fill" style="color: #007bff;"></i>
+            </div>
+            <h3 style="font-size: 1.35rem;">Venta y Alquiler Premium</h3>
+            <p>Estrategias de marketing digital avanzadas para posicionar tu propiedad ante miles de compradores y arrendatarios calificados.</p>
+            <a href="#captacion-form" class="service-link">Publicar Propiedad <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card shadow-sm border-0">
+            <div class="service-icon" style="background: #fff7e6;">
+              <i class="bi bi-currency-dollar" style="color: #ffc107;"></i>
+            </div>
+            <h3 style="font-size: 1.35rem;">Valoración Profesional (ACM)</h3>
+            <p>Análisis Comparativo de Mercado riguroso para asegurar un precio óptimo que maximice tu retorno sin sacrificar el tiempo de venta.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card shadow-sm border-0">
+            <div class="service-icon" style="background: #f0fdf4;">
+              <i class="bi bi-bank2" style="color: #28a745;"></i>
+            </div>
+            <h3 style="font-size: 1.35rem;">Seguridad Legal y Contratos</h3>
+            <p>Blindaje legal en cada transacción. Redacción, revisión y gestión de contratos (arras, alquiler, compraventa) inscritos en SUNARP.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card shadow-sm border-0">
+            <div class="service-icon" style="background: #f7e6ff;">
+              <i class="bi bi-camera-reels-fill" style="color: #9c27b0;"></i>
+            </div>
+            <h3 style="font-size: 1.35rem;">Producción Audiovisual de Calidad</h3>
+            <p>Servicios profesionales de fotografía HDR, vídeo inmersivo y tour virtual 360º para destacar tu inmueble y atraer ofertas de calidad.</p>
+          </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card shadow-sm border-0">
+            <div class="service-icon" style="background: #fce4ec;">
+              <i class="bi bi-person-badge-fill" style="color: #e91e63;"></i>
+            </div>
+            <h3 style="font-size: 1.35rem;">Búsqueda Personalizada (Buyer's Agent)</h3>
+            <p>Servicio exclusivo de "Personal Buyer's Agent" para encontrar la propiedad que se ajuste exactamente a tus criterios de inversión.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card shadow-sm border-0">
+            <div class="service-icon" style="background: #e6f7ff;">
+              <i class="bi bi-receipt-cutoff" style="color: #00bcd4;"></i>
+            </div>
+            <h3 style="font-size: 1.35rem;">Administración de Alquileres</h3>
+            <p>Gestión integral del alquiler: cobranza mensual, supervisión de mantenimiento menor, y manejo de inquilinos (ideal para inversionistas).</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5" style="font-size: 2rem;">Propiedades Destacadas</h2>
+
+      <!-- Filtros Inmobiliarios -->
+      <div class="row mb-5 justify-content-center">
+        <div class="col-lg-10">
+          <div class="card border-0 shadow-sm p-4 bg-white rounded-3">
+            <div class="row g-3 align-items-end">
+              <div class="col-md-3">
+                <label for="filter-type" class="form-label small fw-bold text-muted">Tipo de Operación</label>
+                <select id="filter-type" class="form-select border-2">
+                  <option value="todos">Todos</option>
+                  <option value="Alquiler">Alquiler</option>
+                  <option value="Venta">Venta</option>
+                </select>
+              </div>
+              <div class="col-md-3">
+                <label for="filter-location" class="form-label small fw-bold text-muted">Ubicación</label>
+                <select id="filter-location" class="form-select border-2">
+                  <option value="todos">Todas las ubicaciones</option>
+                  <option value="golf">El Golf</option>
+                  <option value="huanchaco">Huanchaco</option>
+                </select>
+              </div>
+              <div class="col-md-3">
+                <label for="filter-price" class="form-label small fw-bold text-muted">Precio Máximo (Soles)</label>
+                <input type="number" id="filter-price" class="form-control border-2" placeholder="Ej: 2000" min="0">
+              </div>
+              <div class="col-md-3 d-grid">
+                <button id="btn-reset-filters" class="btn btn-outline-secondary fw-semibold">
+                  <i class="bi bi-trash me-1"></i> Limpiar Filtros
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row gy-4 justify-content-center">
+        {properties.map((property) => (
+          <div class="col-lg-4 col-md-6 property-item" 
+               data-type={property.type} 
+               data-location={property.location.toLowerCase()} 
+               data-price={property.priceSoles}>
+            <div class="card h-100 shadow-sm property-card">
+              <img src={property.cardImage} class="card-img-top" alt={property.title} style="height: 200px; object-fit: cover;">
+              <div class="card-body">
+                <span class="badge bg-warning mb-2">{property.type}</span>
+                <h3 class="card-title" style="font-size: 1.25rem;">{property.title}</h3>
+                <p class="card-text text-muted small"><i class="bi bi-geo-alt"></i> {property.location}</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="fw-bold" style="color: var(--color-primary);">{property.price}</span>
+                  <a href={`/propiedades/${property.id}`} class="btn btn-sm btn-outline-primary">Ver Detalles</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div class="row mt-5 pt-4 justify-content-center">
+        <div class="col-lg-8">
+          <div id="captacion-form" class="p-4 p-md-5 bg-white rounded-3 shadow border">
+            <h2 class="mb-4 text-center">¿Tienes una Propiedad que Vender o Alquilar?</h2>
+            <p class="text-center mb-4 lead">
+              Garantizamos una gestión rápida, segura y transparente. ¡Comienza ahora!
+            </p>
+            <form action="https://formsubmit.co/captacion@ghi-housing.com" method="post" class="php-email-form">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Tu Nombre Completo" required>
+                </div>
+                <div class="col-md-6">
+                  <input type="tel" name="phone" class="form-control" placeholder="Teléfono de Contacto" required>
+                </div>
+                <div class="col-12">
+                  <input type="email" class="form-control" name="email" placeholder="Correo Electrónico" required>
+                </div>
+                <div class="col-12">
+                  <select name="type" class="form-select" required>
+                    <option value="" disabled selected>Selecciona el tipo de operación</option>
+                    <option value="Venta">Venta</option>
+                    <option value="Alquiler">Alquiler</option>
+                    <option value="Administración">Administración de Alquiler</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <textarea class="form-control" name="details" rows="3" placeholder="Ubicación y breve descripción de la propiedad" required></textarea>
+                </div>
+                <div class="col-12 text-center">
+                  <div class="loading">Enviando...</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">¡Gracias! Hemos recibido la información de tu propiedad.</div>
+                  <button type="submit" class="btn btn-dark w-100 mt-3">Enviar Propiedad</button>
+                  <input type="hidden" name="_next" value="https://www.ghi-housing.com/thanks">
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact-cta">
+    <div class="container text-center">
+      <h2 class="fw-bold">¿Necesitas Asesoría Inmediata?</h2>
+      <p class="lead">Llámanos o escríbenos para iniciar la gestión de tu propiedad hoy mismo.</p>
+      <a href="https://wa.me/51934929777?text=Hola%20GHI%20Housing%2C%20estoy%20interesado%20en%20informaci%C3%B3n%20sobre%20la%20administraci%C3%B3n%20de%20mi%20condominio." class="btn btn-lg btn-outline-primary mt-3">Contactar a un Asesor</a>
+    </div>
+  </section>
+</Layout>
+
+<style is:global>
+  #header.fixed-top {
+    background-color: #344761;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  @media (min-width: 1200px) {
+    #header.fixed-top .navmenu a {
+      color: #fff !important;
+    }
+    #header.fixed-top .logo .sitename { 
+      color: #fff !important; 
+    }
+  }
+  @media (max-width: 1199px) {
+    .navmenu a,
+    .navmenu ul li { 
+      color: var(--default-color) !important;
+    }
+    .navmenu .featured-link,
+    .navmenu a:hover,
+    .navmenu .active,
+    .navmenu .active:focus {
+      color: var(--nav-hover-color) !important; 
+    }
+    .navmenu .featured-link {
+      color: #ff9900 !important;
+    }
+  }
+</style>
+
+<style>
+  .inmo-hero {
+    background: linear-gradient(rgba(34, 40, 49, 0.6), rgba(34, 40, 49, 0.7)), 
+                url("/assets/img/hero-inmobiliaria.webp?v=1.5") center center; 
+    background-size: cover;
+    background-attachment: fixed; 
+    padding: 150px 0 100px; 
+    color: #fff;
+    text-align: center; 
+  }
+  .inmo-hero h1 {
+    font-size: 3.8rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+    line-height: 1.1;
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 1); 
+  }
+  .inmo-hero p {
+    font-size: 1.35rem; 
+    opacity: 0.95;
+    max-width: 800px;
+    margin: 0 auto 30px;
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
+  }
+  .inmo-hero .btn-primary {
+    background-color: #ffc107; 
+    border-color: #ffc107;
+    color: #344761;
+    font-weight: 700;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  .inmo-hero .btn-primary:hover {
+    background-color: #e0ac08; 
+    border-color: #e0ac08;
+    transform: translateY(-2px);
+  }
+  .property-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+  }
+  .property-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  .property-card img {
+    transition: transform 0.5s ease;
+  }
+  .property-card:hover img {
+    transform: scale(1.05);
+  }
+  .service-card {
+    padding: 30px 20px;
+    text-align: center;
+  }
+  .service-card .service-icon {
+    margin: 0 auto 20px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+  }
+</style>
+
+<script is:inline>
+  function initFilters() {
+    const typeSelect = document.getElementById('filter-type');
+    const locationSelect = document.getElementById('filter-location');
+    const priceInput = document.getElementById('filter-price');
+    const resetBtn = document.getElementById('btn-reset-filters');
+    const propertyItems = document.querySelectorAll('.property-item');
+
+    if (!typeSelect || !locationSelect || !priceInput || !resetBtn) return;
+
+    function applyFilters() {
+      const selectedType = typeSelect.value;
+      const selectedLoc = locationSelect.value;
+      const maxPrice = parseFloat(priceInput.value) || Infinity;
+
+      propertyItems.forEach(item => {
+        const itemType = item.getAttribute('data-type');
+        const itemLocation = item.getAttribute('data-location');
+        const itemPrice = parseFloat(item.getAttribute('data-price')) || 0;
+
+        const matchesType = (selectedType === 'todos' || itemType === selectedType);
+        const matchesLocation = (selectedLoc === 'todos' || itemLocation.includes(selectedLoc));
+        const matchesPrice = (itemPrice <= maxPrice);
+
+        if (matchesType && matchesLocation && matchesPrice) {
+          item.classList.remove('d-none');
+          item.style.opacity = '0';
+          setTimeout(() => {
+            item.style.transition = 'opacity 0.4s ease';
+            item.style.opacity = '1';
+          }, 50);
+        } else {
+          item.classList.add('d-none');
+        }
+      });
+    }
+
+    typeSelect.addEventListener('change', applyFilters);
+    locationSelect.addEventListener('change', applyFilters);
+    priceInput.addEventListener('input', applyFilters);
+
+    resetBtn.addEventListener('click', () => {
+      typeSelect.value = 'todos';
+      locationSelect.value = 'todos';
+      priceInput.value = '';
+      applyFilters();
+    });
+  }
+
+  // Run on initial load and view transitions swaps
+  initFilters();
+  document.addEventListener('astro:page-load', initFilters);
+</script>

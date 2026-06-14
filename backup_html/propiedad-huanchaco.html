@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Alquiler: Departamento Amoblado 1 Dorm. - La Estancia, Huanchaco | GHI Housing</title>
+  <meta content="Alquiler de departamento amoblado de 1 dormitorio en la Urb. La Estancia, Huanchaco, Trujillo. S/ 1,750. Terraza privada y seguridad 24h." name="description">
+  <meta content="alquiler Huanchaco, departamento amoblado Trujillo, La Estancia Huanchaco, GHI Housing" name="keywords">
+
+  <link href="assets/img/favicon.ico" rel="icon">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    /* Estilos específicos para la página de detalle */
+    .property-header {
+      padding: 20px 0;
+      border-bottom: 1px solid #eee;
+    }
+    .property-details .icon-feature {
+      font-size: 1.1rem;
+      color: var(--color-primary);
+      margin-right: 8px;
+    }
+    .detail-card {
+        border-left: 4px solid var(--color-primary);
+        padding: 15px;
+        margin-bottom: 20px;
+        background-color: #f8f9fa;
+    }
+    .swiper-slide img {
+        height: 500px;
+        object-fit: cover;
+    }
+    .alquiler-price {
+        font-size: 2.5rem;
+        color: #007bff; /* Azul para alquiler */
+        font-weight: 700;
+    }
+
+    /* ************************************************* */
+    /* CORRECCIÓN DE ESTILOS DEL FORMULARIO DEL SIDEBAR */
+    /* Estas reglas son necesarias para que el placeholder flotante funcione correctamente. */
+    .form-field {
+        position: relative;
+        margin-bottom: 15px;
+        height: 48px; 
+    }
+    .form-input {
+        width: 100%;
+        height: 100%; 
+        padding: 15px 10px 0; 
+        border: 1px solid #ccc;
+        background-color: transparent;
+        transition: border-color 0.3s;
+    }
+    /* Estilo inicial de la etiqueta */
+    .field-label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 10px 10px;
+        pointer-events: none;
+        transition: 0.3s;
+        color: #999;
+        font-size: 1em; 
+        transform-origin: left top;
+    }
+    /* Mover y escalar la etiqueta cuando el campo está lleno o enfocado */
+    .form-input:focus + .field-label,
+    .form-input:not(:placeholder-shown) + .field-label {
+        transform: translateY(-8px) scale(0.85); 
+        padding-top: 5px;
+        color: var(--color-primary); 
+    }
+    .message-field {
+        height: auto; 
+    }
+    .message-field .form-input {
+        height: auto;
+        min-height: 100px; 
+    }
+    /* Asegurar que el botón Chatear por WhatsApp tenga el color correcto */
+    .btn-success {
+        background-color: #25D366 !important;
+        border-color: #25D366 !important;
+        color: white;
+    }
+  </style>
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+         <img src="assets/img/logo.png" alt="GHI Housing" class="img-fluid" style="height: 50px;">
+      </a>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="index.html#about">Nosotros</a></li>
+          <li><a href="index.html#services">Administración</a></li>
+          <li><a class="nav-link scrollto featured-link" href="inmobiliaria.html" style="color: #ff9900;">Inmobiliaria</a></li>
+          <li><a href="index.html#team">Equipo</a></li>
+          <li><a href="index.html#lumina">Lúmina</a></li>
+          <li><a href="index.html#contact">Contacto</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main" style="margin-top: 80px;">
+
+    <section id="property-detail" class="property-detail section">
+      <div class="container">
+        
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+                <li class="breadcrumb-item"><a href="inmobiliaria.html">Inmobiliaria</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Alquiler Departamento Huanchaco</li>
+            </ol>
+        </nav>
+
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="property-header">
+              <h1 class="fw-bold" style="color: #344761;">Alquiler de Hermoso Apartamento Amoblado</h1>
+              <p class="alquiler-price">S/ 1,750</p>
+              <p class="text-muted"><i class="bi bi-geo-alt-fill"></i> Urb. La Estancia, Huanchaco, Trujillo</p>
+              <span class="badge bg-secondary">Mantenimiento: S/ 30</span>
+            </div>
+
+            <div class="swiper propertySwiper mt-4 mb-4">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="assets/img/inmobiliaria/departamento-en-huanchaco-trujillo-1-dormitorio/1568674607.webp" alt="Sala comedor amoblada" class="img-fluid"></div>
+                <div class="swiper-slide"><img src="assets/img/inmobiliaria/departamento-en-huanchaco-trujillo-1-dormitorio/1568674609.webp" alt="Cocina moderna" class="img-fluid"></div>
+                <div class="swiper-slide"><img src="assets/img/inmobiliaria/departamento-en-huanchaco-trujillo-1-dormitorio/1568674610.webp" alt="Dormitorio principal" class="img-fluid"></div>
+                <div class="swiper-slide"><img src="assets/img/inmobiliaria/departamento-en-huanchaco-trujillo-1-dormitorio/1568674611.webp" alt="Sala comedor amoblada" class="img-fluid"></div>
+                <div class="swiper-slide"><img src="assets/img/inmobiliaria/departamento-en-huanchaco-trujillo-1-dormitorio/1568674613.webp" alt="Cocina moderna" class="img-fluid"></div>
+                <div class="swiper-slide"><img src="assets/img/inmobiliaria/departamento-en-huanchaco-trujillo-1-dormitorio/1568674616.webp" alt="Dormitorio principal" class="img-fluid"></div>
+                <div class="swiper-slide"><img src="assets/img/inmobiliaria/departamento-en-huanchaco-trujillo-1-dormitorio/1568674618.jpg" alt="Sala comedor amoblada" class="img-fluid"></div>
+                </div>
+              <div class="swiper-pagination"></div>
+            </div>
+
+            <h2 class="h4 fw-bold mb-3 mt-5">Características Principales</h2>
+            <div class="row property-details mb-5">
+              <div class="col-md-4">
+                <div class="detail-card">
+                    <p class="mb-0"><i class="bi bi-house-door icon-feature"></i> Tipo: Apartamento</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="detail-card">
+                    <p class="mb-0"><i class="bi bi-rulers icon-feature"></i> Área Total: 90 m²</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="detail-card">
+                    <p class="mb-0"><i class="bi bi-rulers icon-feature"></i> Área Cubierta: 85 m²</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="detail-card">
+                    <p class="mb-0"><i class="bi bi-door-open icon-feature"></i> Dormitorios: 1</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="detail-card">
+                    <p class="mb-0"><i class="bi bi-droplet icon-feature"></i> Baños: 1</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="detail-card">
+                    <p class="mb-0"><i class="bi bi-calendar-check icon-feature"></i> Antigüedad: 1 Año</p>
+                </div>
+              </div>
+            </div>
+
+            <h2 class="h4 fw-bold mb-3">Descripción Completa</h2>
+            <p>
+              Hermoso apartamento amoblado y equipado ubicado en el tercer piso de un edificio exclusivo en la Urb. La Estancia, Huanchaco. Ideal para una persona que busca tranquilidad, comodidad y cercanía a la playa/ciudad.
+            </p>
+            <p class="fw-bold">El departamento consta de:</p>
+            <ul class="list-group list-group-flush mb-5">
+              <li class="list-group-item"><i class="bi bi-check2-circle me-2 text-primary"></i> Un apartamento por piso (Exclusividad).</li>
+              <li class="list-group-item"><i class="bi bi-check2-circle me-2 text-primary"></i> Terraza privada.</li>
+              <li class="list-group-item"><i class="bi bi-check2-circle me-2 text-primary"></i> Sala comedor, Cocina y Lavandería.</li>
+              <li class="list-group-item"><i class="bi bi-check2-circle me-2 text-primary"></i> Un dormitorio y Baño completo.</li>
+              <li class="list-group-item"><i class="bi bi-check2-circle me-2 text-primary"></i> Se entrega equipado, según las fotos.</li>
+            </ul>
+
+            <p class="text-danger fw-bold">Nota:</p>
+            <p>Los servicios (luz, agua) son facturados de forma independiente. Mantenimiento del edificio: S/ 30.00.</p>
+            
+            <h3 class="h5 fw-bold mt-4 mb-3">Ubicación</h3>
+            <p class="text-muted small">Mz D. Lt 35, Dpto. N° - Urb. La Estancia del Distrito de Huanchaco, Huanchaco, Trujillo</p>
+            <div class="ratio ratio-16x9 mb-5">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.623126588647!2d-79.08865748455646!3d-8.090623293881452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x904d9c745b64269d%3A0x6b5797d0287a15fa!2sUrb.%20La%20Estancia%2C%20Huanchaco%2013000%2C%20Per%C3%BA!5e0!3m2!1ses-419!2sus!4v1703642398692!5m2!1ses-419!2sus" 
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+
+          </div>
+
+          <div class="col-lg-4">
+            <div class="sidebar p-4 border rounded shadow-sm sticky-top" style="top: 100px;">
+                <h4 class="mb-4 text-center fw-bold">Agenda tu Visita</h4>
+                <p class="text-center text-muted">Contacta a nuestro asesor para más información o para coordinar una visita al inmueble.</p>
+
+                                <form action="https://formsubmit.co/contacto@ghi-housing.com" method="post" class="php-email-form contact-form">
+                    <input type="hidden" name="Asunto" value="Consulta por Alquiler: Departamento Huanchaco">
+                    <input type="hidden" name="Propiedad" value="Alquiler Huanchaco (S/ 1,750)">
+                    
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-field">
+                                <input type="text" name="name" class="form-input" id="userNameSide" placeholder=" " required="">
+                                <label for="userNameSide" class="field-label">Nombres</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-field">
+                                <input type="tel" class="form-input" name="phone" id="userPhoneSide" placeholder=" " required="">
+                                <label for="userPhoneSide" class="field-label">Teléfono</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-field">
+                                <input type="email" class="form-input" name="email" id="userEmailSide" placeholder=" " required="">
+                                <label for="userEmailSide" class="field-label">Correo</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-field message-field">
+                        <textarea class="form-input message-input" name="message" id="userMessageSide" rows="3" placeholder=" " required=""></textarea>
+                        <label for="userMessageSide" class="field-label">Consulta</label>
+                    </div>
+
+                    <div class="my-3">
+                        <div class="loading">Enviando...</div>
+                        <div class="error-message"></div>
+                        <div class="sent-message">¡Gracias! Tu solicitud ha sido enviada. Te contactaremos pronto.</div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary w-100 mt-2">
+                        Enviar Solicitud
+                        <span class="button-arrow">→</span>
+                    </button>
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://www.ghi-housing.com/thanks.html">
+                    <input type="hidden" name="_template" value="table">
+                </form>
+                
+                <hr class="my-4">
+                <div class="text-center">
+                    <p class="mb-1 fw-bold">¿Tienes dudas rápidas?</p>
+                    <a href="https://wa.me/51934929777?text=Hola,%20quisiera%20más%20información%20sobre%20el%20Departamento%20Amoblado%20en%20Huanchaco%20(S/%201,750)." target="_blank" class="btn btn-success btn-sm w-100"><i class="bi bi-whatsapp"></i> Chatear por WhatsApp</a>
+                </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="copyright">
+              <p>© <span>Copyright</span> <strong class="px-1 sitename">www.ghi-housing.com</strong> <span>Todos los derechos reservados</span></p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="footer-bottom-links">
+              <a href="#">Política de Privacidad</a>
+              <a href="#">Términos y Condiciones</a>
+              <a href="#">Política de Cookies</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      new Swiper(".propertySwiper", {
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false
+        }
+      });
+      
+      // La lógica del efecto flotante depende de main.js o de JS adicional
+      // Pero con el CSS corregido, la superposición del texto ya no debería ocurrir.
+    });
+  </script>
+</body>
+</html>

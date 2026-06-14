@@ -1,0 +1,89 @@
+[
+  {
+    "id": "golf1",
+    "title": "Departamento de Estreno en Urb. El Golf",
+    "type": "Alquiler",
+    "price": "S/ 1,800 (USD 490)",
+    "priceSoles": 1800,
+    "location": "Av. Prolongacion Cesar Vallejo Urbanizacion EL Golf Trujillo",
+    "addressDetails": "El Golf Et.1, Victor Larco Herrera",
+    "cardImage": "/assets/img/inmobiliaria/golf1/1575714381.webp",
+    "area": "83 m²",
+    "areaCovered": "83 m²",
+    "rooms": 3,
+    "bathrooms": 2,
+    "age": "Estreno (2020)",
+    "description": "Alquilo Departamento En Urbanizacion El Golf En El Condominio \"El Mirador Del Golf\". El Departamento Se Encuentra Ubicado En El Piso Nueve Con Una Hermosa Vista Al Mar, Cuenta Con Dos Amplios Ascensores, Zona De Receracion, Guardiania Permanente Y Limpieza En Areas Comunes.",
+    "distribution": "El departamento se distribuye en una amplia sala-comedor bien iluminada gracias a sus ventanales, cocina cerrada con reposteros altos y bajos, lavandería independiente, un dormitorio principal con baño privado y clóset, y dos dormitorios secundarios que comparten un baño completo.",
+    "rules": "Se aceptan mascotas de raza pequeña bajo estricta responsabilidad del inquilino. Vigilancia con control de accesos 24 horas y videovigilancia en áreas comunes. Mantenimiento mensual obligatorio.",
+    "nearPoints": [
+      "A 3 minutos de la Av. Larco y principales bancos",
+      "A 5 minutos del Golf y Country Club de Trujillo",
+      "Cerca del Colegio San José Obrero",
+      "Fácil acceso a transporte público y zonas de esparcimiento"
+    ],
+    "amenities": [
+      "Juegos infantiles.",
+      "Seguridad 24 Horas y Control de Acceso.",
+      "Areas verdes."
+    ],
+    "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15798.50831620392!2d-79.03541819584483!3d-8.12591465223035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91ad3d9c7595e80f%3A0x644673322d64a275!2sUrb.%20El%20Golf%2C%20V%C3%ADctor%20Larco%20Herrera%2013009%2C%20Per%C3%BA!5e0!3m2!1ses-419!2sus!4v1703649600000!5m2!1ses-419!2sus",
+    "images": [
+      "/assets/img/inmobiliaria/golf1/1575714378.webp",
+      "/assets/img/inmobiliaria/golf1/1575714379.webp",
+      "/assets/img/inmobiliaria/golf1/1575714380.webp",
+      "/assets/img/inmobiliaria/golf1/1575714381.webp",
+      "/assets/img/inmobiliaria/golf1/1575714382.webp",
+      "/assets/img/inmobiliaria/golf1/1575714383.webp",
+      "/assets/img/inmobiliaria/golf1/1575714385.webp",
+      "/assets/img/inmobiliaria/golf1/1575714387.webp"
+    ],
+    "whatsappMessage": "Hola, quisiera más información sobre el Departamento de Estreno en El Golf.",
+    "maintenance": "",
+    "extraNotes": ""
+  },
+  {
+    "id": "huanchaco",
+    "title": "Alquiler de Hermoso Apartamento Amoblado",
+    "type": "Alquiler",
+    "price": "S/ 1,750",
+    "priceSoles": 1750,
+    "location": "Urb. La Estancia, Huanchaco, Trujillo",
+    "addressDetails": "Mz D. Lt 35, Dpto. N° - Urb. La Estancia del Distrito de Huanchaco, Huanchaco, Trujillo",
+    "cardImage": "/assets/img/inmobiliaria/departamento-en-huanchaco-trujillo-1-dormitorio/1568674607.webp",
+    "area": "90 m²",
+    "areaCovered": "85 m²",
+    "rooms": 1,
+    "bathrooms": 1,
+    "age": "1 Año",
+    "description": "Hermoso apartamento amoblado y equipado ubicado en el tercer piso de un edificio exclusivo en la Urb. La Estancia, Huanchaco. Ideal para una persona que busca tranquilidad, comodidad y cercanía a la playa/ciudad.",
+    "distribution": "Este acogedor apartamento cuenta con un diseño de concepto abierto de sala-comedor integrado a una cocina americana totalmente equipada con barra de granito, lavandería privada, una terraza independiente con vista y un amplio dormitorio principal con amplio clóset empotrado y baño privado.",
+    "rules": "Ideal para personas solas, ejecutivos o parejas. No se permiten ruidos molestos ni fiestas después de las 10:00 PM. Cochera de visitas disponible en el frontis del edificio.",
+    "nearPoints": [
+      "Ubicado en la exclusiva y pacífica Urb. La Estancia",
+      "A solo 3 minutos del balneario turístico de Huanchaco",
+      "Rodeado de excelentes restaurantes marinos, cafés y centros de surf",
+      "A 15 minutos del centro histórico de la ciudad de Trujillo"
+    ],
+    "amenities": [
+      "Un apartamento por piso (Exclusividad).",
+      "Terraza privada.",
+      "Sala comedor, Cocina y Lavandería.",
+      "Un dormitorio y Baño completo.",
+      "Se entrega equipado, según las fotos."
+    ],
+    "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.623126588647!2d-79.08865748455646!3d-8.090623293881452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x904d9c745b64269d%3A0x6b5797d0287a15fa!2sUrb.%20La%20Estancia%2C%20Huanchaco%2013000%2C%20Per%C3%BA!5e0!3m2!1ses-419!2sus!4v1703642398692!5m2!1ses-419!2sus",
+    "images": [
+      "/assets/img/inmobiliaria/departamento-en-huanchaco-trujillo-1-dormitorio/1568674607.webp",
+      "/assets/img/inmobiliaria/departamento-en-huanchaco-trujillo-1-dormitorio/1568674609.webp",
+      "/assets/img/inmobiliaria/departamento-en-huanchaco-trujillo-1-dormitorio/1568674610.webp",
+      "/assets/img/inmobiliaria/departamento-en-huanchaco-trujillo-1-dormitorio/1568674611.webp",
+      "/assets/img/inmobiliaria/departamento-en-huanchaco-trujillo-1-dormitorio/1568674613.webp",
+      "/assets/img/inmobiliaria/departamento-en-huanchaco-trujillo-1-dormitorio/1568674616.webp",
+      "/assets/img/inmobiliaria/departamento-en-huanchaco-trujillo-1-dormitorio/1568674618.jpg"
+    ],
+    "whatsappMessage": "Hola, quisiera más información sobre el Departamento Amoblado en Huanchaco (S/ 1,750).",
+    "maintenance": "Mantenimiento: S/ 30",
+    "extraNotes": "Los servicios (luz, agua) son facturados de forma independiente. Mantenimiento del edificio: S/ 30.00."
+  }
+]

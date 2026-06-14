@@ -1,0 +1,91 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import WhatsappFloat from '../components/WhatsappFloat.astro';
+
+interface Props {
+  title?: string;
+  description?: string;
+  keywords?: string;
+  whatsappText?: string;
+  ogImage?: string;
+  ogType?: string;
+}
+
+const {
+  title = "GHI Housing - Administración de Condominios en Perú",
+  description = "Administración profesional de condominios y edificios en Perú. Services de gestión integral, mantenimiento, personal y atención al vecino.",
+  keywords = "administración de condominios, gestión de edificios, GHI Housing, Perú, administración de edificios, inmobiliaria GHI",
+  whatsappText,
+  ogImage = "/assets/img/ghi_logo.png",
+  ogType = "website"
+} = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{title}</title>
+  <meta content={description} name="description" />
+  <meta content={keywords} name="keywords" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content={ogType} />
+  <meta property="og:url" content={Astro.url.href} />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:image" content={new URL(ogImage, Astro.url.origin).href} />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content={Astro.url.href} />
+  <meta property="twitter:title" content={title} />
+  <meta property="twitter:description" content={description} />
+  <meta property="twitter:image" content={new URL(ogImage, Astro.url.origin).href} />
+
+  <link href="/assets/img/ghi_favicon.png" rel="icon" type="image/png" />
+  <link href="/assets/img/ghi_favicon.png" rel="apple-touch-icon" />
+
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,700;1,800&family=Questrial:wght@400&display=swap" rel="stylesheet" />
+
+  <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+  <link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+  <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+  <link href="/assets/css/main.css" rel="stylesheet" />
+</head>
+<body class="index-page">
+
+  <Header />
+
+  <main class="main">
+    <slot />
+  </main>
+
+  <Footer />
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Volver arriba">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
+
+  <div id="preloader"></div>
+
+  <WhatsappFloat text={whatsappText} />
+
+  <!-- Vendor JS Files -->
+  <script is:inline src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script is:inline src="/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script is:inline src="/assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script is:inline src="/assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script is:inline src="/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script is:inline src="/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script is:inline src="/assets/js/main.js"></script>
+</body>
+</html>

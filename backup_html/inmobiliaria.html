@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>GHI Housing - Gestión Inmobiliaria Premium en Perú</title>
+  <meta content="Servicio inmobiliario premium en Perú para venta, alquiler y administración de propiedades. Te garantizamos la máxima rentabilidad y seguridad legal. Publica tu propiedad con nosotros." name="description">
+  <meta content="gestión inmobiliaria Perú, venta de propiedades, alquiler de inmuebles, captación de propiedades, administración de alquileres, inmobiliaria Trujillo, GHI Housing inmobiliaria" name="keywords">
+
+
+  <link href="assets/img/favicon.ico" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Questrial:wght@400&display=swap" rel="stylesheet">
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    /* Estilos del Hero mejorados */
+    .inmo-hero {
+      /* MEJORA DE CONTRASTE: Overlay más suave (0.6 / 0.7) */
+      background: linear-gradient(rgba(34, 40, 49, 0.6), rgba(34, 40, 49, 0.7)), 
+                  url("/assets/img/hero-inmobiliaria.webp?v=1.5") center center; 
+      background-size: cover;
+      background-attachment: fixed; 
+      padding: 150px 0 100px; 
+      color: #fff;
+      text-align: center; 
+    }
+    
+    /* CORRECCIÓN DE ESCRITORIO: Fondo Sólido del Header Fijo */
+    #header.fixed-top {
+        background-color: #344761; /* Color azul oscuro del tema */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+    
+    /* ************************************************************ */
+    /* ESTILOS ESCRITORIO (>= 1200px): Texto Blanco en Header Fijo */
+    /* ************************************************************ */
+    @media (min-width: 1200px) {
+        #header.fixed-top .navmenu a {
+            color: #fff !important; /* Texto blanco sobre fondo oscuro */
+        }
+        #header.fixed-top .logo .sitename { 
+            color: #fff !important; 
+        }
+    }
+    /* ************************************************************ */
+
+
+    /* ************************************************************ */
+    /* CORRECCIÓN FINAL PARA MÓVIL (< 1200px): Texto Oscuro en Menú */
+    /* ************************************************************ */
+    @media (max-width: 1199px) {
+        .navmenu a,
+        .navmenu ul li { 
+            /* Revierte al color por defecto (gris/negro) para contrastar con el fondo blanco del menú móvil */
+            color: var(--default-color) !important;
+        }
+        /* Mantiene el color destacado, activo y hover */
+        .navmenu .featured-link,
+        .navmenu a:hover,
+        .navmenu .active,
+        .navmenu .active:focus {
+            color: var(--nav-hover-color) !important; 
+        }
+        .navmenu .featured-link {
+            color: #ff9900 !important;
+        }
+    }
+    /* ************************************************************ */
+    
+    .inmo-hero h1 {
+      font-size: 3.8rem;
+      font-weight: 700;
+      margin-bottom: 25px;
+      line-height: 1.1;
+      /* Sombra fuerte para alto contraste */
+      text-shadow: 0px 4px 8px rgba(0, 0, 0, 1); 
+    }
+    .inmo-hero p {
+      font-size: 1.35rem; 
+      opacity: 0.95;
+      max-width: 800px;
+      margin: 0 auto 30px;
+      text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
+    }
+    .inmo-hero .btn-primary {
+        background-color: #ffc107; 
+        border-color: #ffc107;
+        color: #344761;
+        font-weight: 700;
+        padding: 12px 30px;
+        font-size: 1.1rem;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+    .inmo-hero .btn-primary:hover {
+        background-color: #e0ac08; 
+        border-color: #e0ac08;
+        transform: translateY(-2px);
+    }
+    /* Estilos de Card de Propiedad */
+    .property-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      overflow: hidden;
+    }
+    .property-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+    .property-card img {
+        transition: transform 0.5s ease;
+    }
+    .property-card:hover img {
+        transform: scale(1.05);
+    }
+    /* Mejora en el estilo del servicio-card */
+    .service-card {
+        padding: 30px 20px;
+        text-align: center;
+    }
+    .service-card .service-icon {
+        margin: 0 auto 20px;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 32px;
+    }
+  </style>
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+         <img src="assets/img/logo.png" alt="GHI Housing" class="img-fluid" style="height: 50px;">
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="index.html#about">Nosotros</a></li>
+          <li><a href="index.html#services">Administración</a></li>
+          <li><a class="nav-link scrollto active featured-link" href="inmobiliaria.html" style="color: #ff9900;">Inmobiliaria</a></li>
+          <li><a href="index.html#team">Equipo</a></li>
+          <li><a href="index.html#lumina">Lúmina</a></li>
+          <li><a href="index.html#contact">Contacto</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <section class="inmo-hero d-flex align-items-center">
+        <div class="container text-center">
+            <h1>Encuentra tu Inversión Perfecta en Perú</h1>
+            <p class="mt-3">
+                Somos tu socio estratégico para la compra, venta y administración de inmuebles. 
+                Garantizamos la máxima rentabilidad, transparencia y seguridad legal en cada operación.
+            </p>
+            <div class="mt-4">
+                <a href="#captacion-form" class="btn btn-primary btn-lg">
+                    Vender o Alquilar mi Propiedad <i class="bi bi-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="servicios-inmobiliarios" class="services section">
+
+        <div class="container section-title">
+            <h2 style="font-size: 2.5rem; color: var(--color-primary);">Nuestros Servicios Exclusivos</h2>
+            <p class="lead" style="color: #6c757d;">
+                Te ofrecemos una gestión especializada y de alta calidad para maximizar el valor de tu propiedad.
+            </p>
+        </div>
+        
+        <div class="container">
+            <div class="row gy-4 justify-content-center">
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card shadow-sm border-0">
+                        <div class="service-icon" style="background: #eef7ff;">
+                            <i class="bi bi-house-door-fill" style="color: #007bff;"></i>
+                        </div>
+                        <h3 style="font-size: 1.35rem;">Venta y Alquiler Premium</h3>
+                        <p>Estrategias de marketing digital avanzadas para posicionar tu propiedad ante miles de compradores y arrendatarios calificados.</p>
+                        <a href="#captacion-form" class="service-link">Publicar Propiedad <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card shadow-sm border-0">
+                        <div class="service-icon" style="background: #fff7e6;">
+                            <i class="bi bi-currency-dollar" style="color: #ffc107;"></i>
+                        </div>
+                        <h3 style="font-size: 1.35rem;">Valoración Profesional (ACM)</h3>
+                        <p>Análisis Comparativo de Mercado riguroso para asegurar un precio óptimo que maximice tu retorno sin sacrificar el tiempo de venta.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card shadow-sm border-0">
+                        <div class="service-icon" style="background: #f0fdf4;">
+                            <i class="bi bi-bank2" style="color: #28a745;"></i>
+                        </div>
+                        <h3 style="font-size: 1.35rem;">Seguridad Legal y Contratos</h3>
+                        <p>Blindaje legal en cada transacción. Redacción, revisión y gestión de contratos (arras, alquiler, compraventa) inscritos en SUNARP.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card shadow-sm border-0">
+                        <div class="service-icon" style="background: #f7e6ff;">
+                            <i class="bi bi-camera-reels-fill" style="color: #9c27b0;"></i>
+                        </div>
+                        <h3 style="font-size: 1.35rem;">Producción Audiovisual de Calidad</h3>
+                        <p>Servicios profesionales de fotografía HDR, vídeo inmersivo y tour virtual 360º para destacar tu inmueble y atraer ofertas de calidad.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card shadow-sm border-0">
+                        <div class="service-icon" style="background: #fce4ec;">
+                            <i class="bi bi-person-badge-fill" style="color: #e91e63;"></i>
+                        </div>
+                        <h3 style="font-size: 1.35rem;">Búsqueda Personalizada (Buyer's Agent)</h3>
+                        <p>Servicio exclusivo de "Personal Buyer's Agent" para encontrar la propiedad que se ajuste exactamente a tus criterios de inversión.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card shadow-sm border-0">
+                        <div class="service-icon" style="background: #e6f7ff;">
+                            <i class="bi bi-receipt-cutoff" style="color: #00bcd4;"></i>
+                        </div>
+                        <h3 style="font-size: 1.35rem;">Administración de Alquileres</h3>
+                        <p>Gestión integral del alquiler: cobranza mensual, supervisión de mantenimiento menor, y manejo de inquilinos (ideal para inversionistas).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5" style="font-size: 2rem;">Propiedades Destacadas</h2>
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm property-card">
+                        <img src="assets/img/inmobiliaria//golf1/1575714381.webp" class="card-img-top" alt="Oficina Corporativa" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <span class="badge bg-warning mb-2">Alquiler</span>
+                            <h3 class="card-title" style="font-size: 1.25rem;">Departamento 3 Dormitorios</h3>
+                            <p class="card-text text-muted small"><i class="bi bi-geo-alt"></i> Av. Prolongacion Cesar Vallejo Urbanizacion EL Golf Trujillo</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="fw-bold" style="color: var(--color-primary);">S/ 1,800 USD (USD 490)</span>
+                                <a href="propiedad-golf1.html" class="btn btn-sm btn-outline-primary">Ver Detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm property-card">
+                        <img src="assets/img/inmobiliaria/departamento-en-huanchaco-trujillo-1-dormitorio/1568674607.webp" class="card-img-top" alt="Oficina Corporativa" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <span class="badge bg-warning mb-2">Alquiler</span>
+                            <h3 class="card-title" style="font-size: 1.25rem;">Departamento Amoblado</h3>
+                            <p class="card-text text-muted small"><i class="bi bi-geo-alt"></i> Urb. La Estancia, Huanchaco, Trujillo</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="fw-bold" style="color: var(--color-primary);">S/ 1,750</span>
+                                <a href="propiedad-huanchaco.html" class="btn btn-sm btn-outline-primary">Ver Detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+            <div class="row mt-5 pt-4 justify-content-center">
+                <div class="col-lg-8">
+                    <div id="captacion-form" class="p-4 p-md-5 bg-white rounded-3 shadow border">
+                        <h2 class="mb-4 text-center">¿Tienes una Propiedad que Vender o Alquilar?</h2>
+                        <p class="text-center mb-4 lead">
+                            Garantizamos una gestión rápida, segura y transparente. ¡Comienza ahora!
+                        </p>
+                        <form action="https://formsubmit.co/captacion@ghi-housing.com" method="post" class="php-email-form">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <input type="text" name="name" class="form-control" placeholder="Tu Nombre Completo" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="tel" name="phone" class="form-control" placeholder="Teléfono de Contacto" required>
+                                </div>
+                                <div class="col-12">
+                                    <input type="email" class="form-control" name="email" placeholder="Correo Electrónico" required>
+                                </div>
+                                <div class="col-12">
+                                    <select name="type" class="form-select" required>
+                                        <option value="" disabled selected>Selecciona el tipo de operación</option>
+                                        <option value="Venta">Venta</option>
+                                        <option value="Alquiler">Alquiler</option>
+                                        <option value="Administración">Administración de Alquiler</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <textarea class="form-control" name="details" rows="3" placeholder="Ubicación y breve descripción de la propiedad" required></textarea>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <div class="loading">Enviando...</div>
+                                    <div class="error-message"></div>
+                                    <div class="sent-message">¡Gracias! Hemos recibido la información de tu propiedad.</div>
+                                    <button type="submit" class="btn btn-dark w-100 mt-3">Enviar Propiedad</button>
+                                    <input type="hidden" name="_next" value="https://www.ghi-housing.com/thanks.html">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="section" id="contact-cta">
+        <div class="container text-center">
+            <h2 class="fw-bold">¿Necesitas Asesoría Inmediata?</h2>
+            <p class="lead">Llámanos o escríbenos para iniciar la gestión de tu propiedad hoy mismo.</p>
+            <a href="https://wa.me/51934929777?text=Hola%20GHI%20Housing%2C%20estoy%20interesado%20en%20informaci%C3%B3n%20sobre%20la%20administraci%C3%B3n%20de%20mi%20condominio." class="btn btn-lg btn-outline-primary mt-3">Contactar a un Asesor</a>
+        </div>
+    </section>
+    </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="copyright">
+              <p>© <span>Copyright</span> <strong class="px-1 sitename">www.ghi-housing.com</strong> <span>Todos los derechos reservados</span></p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="footer-bottom-links">
+              <a href="#">Política de Privacidad</a>
+              <a href="#">Términos y Condiciones</a>
+              <a href="#">Política de Cookies</a>
+            </div>
+            <div class="credits">
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <script src="assets/js/main.js"></script>
+
+  <a id="whatsapp-float" 
+   href="https://wa.me/51934929777?text=Hola%20GHI%20Housing%2C%20estoy%20interesado%20en%20informaci%C3%B3n%20sobre%20la%20gestión%20inmobiliaria." 
+   target="_blank" rel="noopener noreferrer" aria-label="Contactar vía WhatsApp">
+  <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor" aria-hidden="true">
+    <path d="M20.52 3.48A11.88 11.88 0 0012 .08C5.6.08.9 4.8.9 11.2c0 1.98.52 3.93 1.52 5.66L.1 23.9l7.32-1.9a11.05 11.05 0 004.58.96h.02c6.4 0 11.1-4.72 11.1-11.12 0-2.96-1.16-5.74-3.6-7.44zM12 20.3h-.02c-1.3 0-2.57-.36-3.68-1.03l-.27-.17-4.33 1.12 1.16-4.22-.18-.28A8.55 8.55 0 013.4 11.2c0-4.74 3.85-8.6 8.6-8.6 4.74 0 8.6 3.86 8.6 8.6S16.74 20.3 12 20.3z"/>
+    <path d="M16.3 13.7c-.3-.13-1.77-.87-2.05-.97-.28-.1-.48-.13-.68.13-.2.27-.78.97-.96 1.17-.18.2-.36.23-.66.08-.3-.13-1.26-.46-2.4-1.48-.89-.79-1.48-1.77-1.65-2.07-.17-.3-.02-.46.12-.6.12-.12.28-.3.42-.45.14-.15.18-.27.28-.45.1-.18.04-.34-.02-.47-.06-.13-.68-1.64-.93-2.24-.24-.59-.48-.51-.66-.52l-.56-.01c-.2 0-.52.07-.8.34-.28.27-1.07 1.04-1.07 2.54 0 1.5 1.1 2.95 1.25 3.16.16.21 2.16 3.36 5.24 4.59 3.08 1.23 3.08.82 3.64.77.56-.05 1.77-.72 2.02-1.42.25-.7.25-1.3.18-1.42-.06-.12-.24-.18-.52-.31z"/>
+  </svg>
+</a>
+
+<style>
+  /* Estilos del botón flotante */
+  #whatsapp-float{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background: linear-gradient(180deg,#25D366,#128C7E); /* WhatsApp green gradient */
+    color: #fff;
+    width:56px;
+    height:56px;
+    border-radius: 50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    box-shadow: 0 6px 18px rgba(20,20,20,0.25);
+    z-index: 9999;
+    transition: transform .15s ease, box-shadow .15s ease;
+  }
+  #whatsapp-float:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 10px 26px rgba(20,20,20,0.30);
+  }
+  /* adapt color icon to white */
+  #whatsapp-float svg{ color: #ffffff; display:block; }
+  /* accesibilidad en teclado */
+  #whatsapp-float:focus{ outline: 3px solid rgba(52,71,97,0.25); outline-offset: 4px; }
+  /* ocultar en pantallas muy grandes si quieres (opcional) */
+  @media (min-width:1400px){
+    /* #whatsapp-float{ right: 40px; } ajustar si es necesario */
+  }
+</style>
+
+
+</body>
+
+</html>
