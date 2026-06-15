@@ -1954,7 +1954,7 @@ section,
   margin-top: 40px;
 }
 
-.about .btn-cta {
+.btn-cta {
   display: inline-flex;
   align-items: center;
   gap: 12px;
@@ -1969,19 +1969,19 @@ section,
   transition: all 0.3s ease;
 }
 
-.about .btn-cta:hover {
+.btn-cta:hover {
   background: var(--accent-color);
   color: var(--contrast-color);
   transform: translateY(-2px);
   box-shadow: 0 8px 25px color-mix(in srgb, var(--accent-color), transparent 60%);
 }
 
-.about .btn-cta i {
+.btn-cta i {
   font-size: 1.125rem;
   transition: transform 0.3s ease;
 }
 
-.about .btn-cta:hover i {
+.btn-cta:hover i {
   transform: translateX(3px);
 }
 
