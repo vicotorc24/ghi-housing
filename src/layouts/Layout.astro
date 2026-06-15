@@ -17,9 +17,34 @@ const {
   description = "Administración profesional de condominios y edificios en Perú. Services de gestión integral, mantenimiento, personal y atención al vecino.",
   keywords = "administración de condominios, gestión de edificios, GHI Housing, Perú, administración de edificios, inmobiliaria GHI",
   whatsappText,
-  ogImage = "/assets/img/ghi_logo.png",
+  ogImage = "/assets/img/ghi_logo.webp",
   ogType = "website"
 } = Astro.props;
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "RealEstateAgent",
+  "name": "GHI Housing",
+  "image": new URL(ogImage, Astro.url.origin).href,
+  "url": Astro.url.origin,
+  "telephone": "+51999999999", // The user can change this if they want
+  "address": [
+    {
+      "@type": "PostalAddress",
+      "addressLocality": "Trujillo",
+      "addressRegion": "La Libertad",
+      "addressCountry": "PE"
+    },
+    {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. Salaverry 475",
+      "addressLocality": "Jesús María",
+      "addressRegion": "Lima",
+      "addressCountry": "PE"
+    }
+  ],
+  "description": description
+};
 ---
 
 <!DOCTYPE html>
@@ -44,6 +69,8 @@ const {
   <meta property="twitter:title" content={title} />
   <meta property="twitter:description" content={description} />
   <meta property="twitter:image" content={new URL(ogImage, Astro.url.origin).href} />
+
+  <script type="application/ld+json" set:html={JSON.stringify(schema)} />
 
   <link rel="sitemap" href="/sitemap-index.xml" />
   <link href="/favicon.png" rel="icon" type="image/png" sizes="48x48" />
